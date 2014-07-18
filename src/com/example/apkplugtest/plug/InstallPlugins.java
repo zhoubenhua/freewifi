@@ -21,7 +21,7 @@ public class InstallPlugins {
 	public void installBundle(Context context,BundleContext mBundleContext,installCallback callback){
 				//把BundleDemo1.apk从assets文件夹中移至应用安装目录中
 				File f0=null,f1=null;
-				 try {
+				 try {			
 					 	//从assets目录中复制apk文件到SD卡中
 						InputStream in=context.getAssets().open("DBTasks.apk");
 						f0=new File(context.getFilesDir(),"DBTasks.apk");
